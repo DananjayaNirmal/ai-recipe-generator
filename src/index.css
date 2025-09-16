@@ -1,0 +1,54 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:#ebebeb;
+}
+
+.header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#ffffff;
+    box-shadow:0px 1px 3px opx rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+    padding:10px 0px 10px 10px
+}
+
+.header > img{
+    width:50px;
+    height:50px;
+    margin-right:10px;
+}
+
+.main{
+    /*margin:40px 500px;*/
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+    
+}
+
+.get-ingredient-form{
+    margin:20px 0px;
+}
+
+.get-ingredient-form > input{
+    margin-right:10px;
+    border:1px solid #aeaeae;
+    padding:5px 13px;
+    border:none;
+    border-radius:5px;
+    box-shadow:0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    outline:none;
+    flex-grow:1;
+    min-width:150px;
+    max-width:400px;
+}
+
+.get-ingredient-form > button{
+    border-radius:5px;
+    border:none;
+    background-color:#111;
+    color:#aeaeae;
+    padding:5px 13px;
+}
