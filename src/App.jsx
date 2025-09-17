@@ -1,13 +1,14 @@
+import {createRoot} from "react-dom/client"
 import Header from "./componants/Header"
 import Main from "./componants/Main"
+//import App from "./App"
 
+const root = createRoot(document.getElementById("root"))
 
-export default function App(){
-    return(
-        <>
-            <Header/>
-            <Main/>
-        </>
-    )
-}
+root.render(
+    <>
+    <Header/>
+    <Main/>
+    </>
+)
 

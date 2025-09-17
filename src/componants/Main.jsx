@@ -1,18 +1,20 @@
+import React from "react"
+
 export default function Main(){
 
-    const ingredients = ["chicken", "oregano", "tomatoes"]
+    const [ingredients, setIngredients] = React.useState([])
 
     const ingredientItems = ingredients.map(ingredient => (
         <li key={ingredient}>{ingredient}</li>
     ))
 
+    //take input, and update the array and display in the console
     function btnClick(event){
-        //now it takes the input value and display on console
-        //ingred is the name > <input type = "text" placeholder="Ex: sugar" name = "ingred"/>
-        event.preventDefault()
+        event.preventDefault() // stop refreshing the page
         const formData = new FormData(event.currentTarget)
         const newIngredient = formData.get("ingred")
-        ingredients.push(newIngredient)
+        //ingredients.push(newIngredient)
+        setIngredients(prevIngredients => [...prevIngredients, newIngredient])
         console.log(ingredients)
 
     }
