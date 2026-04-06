@@ -16,7 +16,7 @@ export default function Main() {
         <li key={ingredient}>{ingredient}</li>
     ))
 
-    function btnClick(event) {
+    function addIngredient(event) {
         event.preventDefault()
         const formData = new FormData(event.currentTarget)
         const newIngredient = formData.get("ingred")
@@ -69,7 +69,7 @@ export default function Main() {
             </div>
 
             <div className="main">
-                <form className="get-ingredient-form" onSubmit={btnClick}>
+                <form className="get-ingredient-form" onSubmit={addIngredient}>
                     <input type="text" placeholder="Ex: sugar" name="ingred" />
                     <button>Add ingredient</button>
                 </form>
