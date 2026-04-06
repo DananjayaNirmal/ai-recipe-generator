@@ -1,12 +1,101 @@
-# React + Vite
+# 🍳 AI Recipe Generator 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered recipe generator built with React. Add ingredients you have on hand and get a personalized food recipe instantly — powered by the Groq API.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add ingredients one by one to your list
+- Generate a food recipe based on your ingredients using AI
+- Fast responses powered by Groq's LPU hardware
+- Clean, minimal UI
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Demo
+
+> Add ingredients like `eggs`, `cheese`, `bread` → click **Get a recipe** → get a full recipe with steps!
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- A free [Groq API key](https://console.groq.com)
+
+---
+
+### 1. Clone the repository
+
+```bash
+cd AI-Recipe-Generator
+git clone https://github.com/DananjayaNirmal/ai-recipe-generator.git
+
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Get your Groq API Key
+
+1. Go to [console.groq.com](https://console.groq.com)
+2. Sign up or log in
+3. Click **API Keys** → **Create API Key**
+4. Copy your key
+
+### 4. Set up environment variables
+
+Create a `.env` file in the root of the project:
+
+```
+VITE_GROQ_API_KEY=your-groq-api-key-here
+```
+
+> ⚠️ Make sure the key starts with `VITE_` — this is required by Vite to expose it to the browser.
+
+### 5. Start the development server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 🔑 Using Your Own API Key
+
+This project uses the **Groq API** with the `llama-3.3-70b-versatile` model.
+
+To use your own key:
+
+1. Sign up for free at [console.groq.com](https://console.groq.com)
+2. Generate an API key from the dashboard
+3. Add it to your `.env` file as shown above
+4. Restart the dev server with `npm run dev`
+
+You can also swap the model in `src/components/Main.jsx`:
+
+```js
+model: "llama-3.3-70b-versatile"  // change this to any supported Groq model
+```
+
+## 🛠️ Built With
+
+- [React](https://react.dev/) — UI framework
+- [Vite](https://vitejs.dev/) — Build tool
+- [Groq SDK](https://console.groq.com/docs/libraries) — AI API client
+- [Llama 3.3 70B](https://groq.com/) — Language model
+
+
+## 🔒 Security Note
+
+Never commit your `.env` file to GitHub. Make sure `.env` is listed in your `.gitignore`:
+
+```
+.env
+```
