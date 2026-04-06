@@ -42,7 +42,7 @@ export default function Main() {
                         Please suggest a recipe I can make with these ingredients for eating.
                         Include: recipe name, ingredients with amounts, and step-by-step cooking instructions.
                         If the ingredients don't make sense for a food recipe, politely say you can only help with food recipes.
-                        If there is a one ingredient, tell `
+                        `
                     }
                 ]
 
