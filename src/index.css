@@ -327,4 +327,28 @@ section h2::before {
   .get-recipe-container button { width: 100%; text-align: center; }
   .get-ingredient-form { flex-direction: column; padding: 0.75rem; }
   .get-ingredient-form button { width: 100%; text-align: center; padding: 0.75rem; }
-}                          
+}  
+
+/*The output content*/
+.recipe-container {
+  background: #fff8e1;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.recipe-container h2 {
+  color: #ff6f00;
+  margin-bottom: 12px;
+}
+
+.recipe-container h3 {
+  color: #ff8f00;
+  margin-top: 16px;
+}
+
+.recipe-container p {
+  line-height: 1.6;
+  margin: 4px 0;
+}

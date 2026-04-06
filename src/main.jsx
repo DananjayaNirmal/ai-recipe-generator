@@ -91,12 +91,28 @@ export default function Main() {
                     </div>
                 }
 
-                {recipe &&
+                {/*recipe &&
                     <div className="recipe-container">
                         <h2>Your Recipe</h2>
                         <pre className="recipe-text">{recipe}</pre>
                     </div>
-                }
+                */}
+
+                {recipe && (
+                <div className="recipe-container">
+                    <h2>Your Recipe</h2>
+                    {recipe.split("\n").map((line, index) => {
+                    if (line.toLowerCase().includes("ingredients")) {
+                        return <h3 key={index}>{line}</h3>;
+                    } else if (line.toLowerCase().includes("instructions") || line.toLowerCase().includes("steps")) {
+                        return <h4 key={index}>{line}</h4>;
+                    } else {
+                        return <p key={index}>{line}</p>;
+                    }
+                    })}
+                </div>
+                )}
+                
             </section>
         </>
     )
