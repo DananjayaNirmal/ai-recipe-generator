@@ -1,8 +1,15 @@
-# 🍳 AI Recipe Generator 
+# AI Recipe Generator 
 
 An AI-powered recipe generator built with React. Add ingredients you have on hand and get a personalized food recipe instantly — powered by the Groq API.
 
-## ✨ Features
+## 🛠️ Built With
+
+- [React](https://react.dev/) — UI framework
+- [Vite](https://vitejs.dev/) — Build tool
+- [Groq SDK](https://console.groq.com/docs/libraries) — AI API client
+- [Llama 3.3 70B](https://groq.com/) — Language model
+  
+## Features
 
 - Add ingredients one by one to your list
 - Generate a food recipe based on your ingredients using AI
@@ -11,13 +18,13 @@ An AI-powered recipe generator built with React. Add ingredients you have on han
 
 ---
 
-## 📸 Demo
+## Demo
 
 > Add ingredients like `eggs`, `cheese`, `bread` → click **Get a recipe** → get a full recipe with steps!
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -29,9 +36,8 @@ An AI-powered recipe generator built with React. Add ingredients you have on han
 ### 1. Clone the repository
 
 ```bash
-cd AI-Recipe-Generator
 git clone https://github.com/DananjayaNirmal/ai-recipe-generator.git
-
+cd AI-Recipe-Generator
 ```
 
 ### 2. Install dependencies
@@ -83,15 +89,6 @@ You can also swap the model in `src/components/Main.jsx`:
 ```js
 model: "llama-3.3-70b-versatile"  // change this to any supported Groq model
 ```
-
-## 🛠️ Built With
-
-- [React](https://react.dev/) — UI framework
-- [Vite](https://vitejs.dev/) — Build tool
-- [Groq SDK](https://console.groq.com/docs/libraries) — AI API client
-- [Llama 3.3 70B](https://groq.com/) — Language model
-
-
 ## 🔒 Security Note
 
 Never commit your `.env` file to GitHub. Make sure `.env` is listed in your `.gitignore`:
