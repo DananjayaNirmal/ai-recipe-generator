@@ -1,6 +1,6 @@
 import {createRoot} from "react-dom/client"
 import Header from "./componants/Header"
-import Main from "./componants/Main"
+import Main from "./main"
 //import App from "./App"
 
 const root = createRoot(document.getElementById("root"))
